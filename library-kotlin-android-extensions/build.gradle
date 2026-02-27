@@ -36,9 +36,27 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    publishing {
+        singleVariant('release')
+    }
 }
 
 dependencies {
     compileOnly project(':library')
     api deps.kotlin.stdlib
+}
+
+apply plugin: 'maven-publish'
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                from components.release
+                groupId = project.group
+                artifactId = project.name
+                version = project.version
+            }
+        }
+    }
 }
