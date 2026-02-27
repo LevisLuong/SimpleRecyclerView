@@ -26,3 +26,15 @@ dependencies {
     implementation project(':library')
     implementation project(':library-kotlin-android-extensions')
 }
+
+// ButterKnife annotation processor needs --add-opens on JDK 9+. Only add when JDK 9+ so JitPack (Java 8) is unchanged.
+tasks.withType(JavaCompile).configureEach {
+    if (JavaVersion.current().isJava9Compatible()) {
+        options.fork = true
+        options.forkOptions.jvmArgs.addAll([
+            '--add-opens=jdk.compiler/com.sun.tools.javac.tree=ALL-UNNAMED',
+            '--add-opens=jdk.compiler/com.sun.tools.javac.code=ALL-UNNAMED',
+            '--add-opens=jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED'
+        ])
+    }
+}
