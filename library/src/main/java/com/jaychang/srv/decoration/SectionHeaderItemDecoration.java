@@ -3,13 +3,13 @@ package com.jaychang.srv.decoration;
 import android.annotation.SuppressLint;
 import android.graphics.Canvas;
 import android.graphics.Rect;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.View;
 
 import com.jaychang.srv.SimpleRecyclerView;
 
-import static android.support.v7.widget.RecyclerView.NO_POSITION;
+import static androidx.recyclerview.widget.RecyclerView.NO_POSITION;
 
 @SuppressWarnings("unchecked")
 public class SectionHeaderItemDecoration extends RecyclerView.ItemDecoration {

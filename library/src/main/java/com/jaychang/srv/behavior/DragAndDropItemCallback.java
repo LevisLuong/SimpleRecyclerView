@@ -4,16 +4,16 @@ import android.animation.AnimatorInflater;
 import android.animation.StateListAnimator;
 import android.graphics.Canvas;
 import android.os.Build;
-import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.helper.ItemTouchHelper;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.recyclerview.widget.ItemTouchHelper;
 
 import com.jaychang.srv.R;
 import com.jaychang.srv.SimpleRecyclerView;
 
-import static android.support.v7.widget.LinearLayoutManager.VERTICAL;
-import static android.support.v7.widget.RecyclerView.NO_POSITION;
+import static androidx.recyclerview.widget.LinearLayoutManager.VERTICAL;
+import static androidx.recyclerview.widget.RecyclerView.NO_POSITION;
 
 @SuppressWarnings("unchecked")
 class DragAndDropItemCallback extends ItemTouchHelper.Callback {

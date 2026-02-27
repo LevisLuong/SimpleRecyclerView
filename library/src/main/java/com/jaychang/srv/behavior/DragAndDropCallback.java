@@ -1,6 +1,6 @@
 package com.jaychang.srv.behavior;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 import android.view.View;
 
 import com.jaychang.srv.SimpleRecyclerView;

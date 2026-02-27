@@ -3,7 +3,7 @@ package com.jaychang.demo.srv.util;
 import android.app.Activity;
 import android.os.AsyncTask;
 import android.os.SystemClock;
-import android.support.annotation.IntRange;
+import androidx.annotation.IntRange;
 
 import com.jaychang.demo.srv.model.Ad;
 import com.jaychang.demo.srv.model.Book;

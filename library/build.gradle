@@ -1,18 +1,8 @@
 apply plugin: 'com.android.library'
-apply plugin: 'com.novoda.bintray-release'
-
-buildscript {
-    repositories {
-        jcenter()
-    }
-    dependencies {
-        classpath deps.build.gradlePlugins.bintray
-    }
-}
 
 android {
-    compileSdkVersion deps.build.compileSdkVersion
-    buildToolsVersion deps.build.buildToolsVersion
+    namespace 'com.jaychang.srv'
+    compileSdk deps.build.compileSdkVersion
 
     defaultConfig {
         minSdkVersion deps.build.minSdkVersion
@@ -31,13 +21,4 @@ android {
 
 dependencies {
     api deps.support.recyclerview
-}
-
-publish {
-    userOrg = 'jaychang0917'
-    groupId = 'com.jaychang'
-    artifactId = 'simplerecyclerview'
-    publishVersion = '2.0.5'
-    desc = 'A RecyclerView extension for building list more easily.'
-    website = 'https://github.com/jaychang0917/SimpleRecyclerView'
 }

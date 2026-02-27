@@ -1,7 +1,7 @@
 package com.jaychang.demo.srv;
 
 import android.os.Bundle;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 import android.view.View;
 
 import com.jaychang.demo.srv.cell.BookCell;

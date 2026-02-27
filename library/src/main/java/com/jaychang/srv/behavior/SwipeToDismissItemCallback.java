@@ -1,12 +1,12 @@
 package com.jaychang.srv.behavior;
 
 import android.graphics.Canvas;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.helper.ItemTouchHelper;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.recyclerview.widget.ItemTouchHelper;
 
 import com.jaychang.srv.SimpleRecyclerView;
 
-import static android.support.v7.widget.RecyclerView.NO_POSITION;
+import static androidx.recyclerview.widget.RecyclerView.NO_POSITION;
 
 @SuppressWarnings("unchecked")
 class SwipeToDismissItemCallback extends ItemTouchHelper.Callback {

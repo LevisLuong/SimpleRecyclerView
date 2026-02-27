@@ -1,6 +1,6 @@
 package com.jaychang.srv;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 public interface Updatable<T> {
 

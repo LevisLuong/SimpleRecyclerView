@@ -1,6 +1,6 @@
 package com.jaychang.srv.decoration;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 import android.view.View;
 
 public interface SectionHeaderProvider<T> {

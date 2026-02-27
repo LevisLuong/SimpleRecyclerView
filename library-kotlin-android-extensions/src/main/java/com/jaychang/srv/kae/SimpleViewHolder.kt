@@ -1,6 +1,6 @@
 package com.jaychang.srv.kae
 
 import android.view.View
-import kotlinx.android.extensions.LayoutContainer
+import com.jaychang.srv.SimpleViewHolder as BaseSimpleViewHolder
 
-class SimpleViewHolder(override val containerView: View): com.jaychang.srv.SimpleViewHolder(containerView), LayoutContainer
+class SimpleViewHolder(containerView: View) : BaseSimpleViewHolder(containerView)

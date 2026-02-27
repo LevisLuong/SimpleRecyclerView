@@ -1,8 +1,8 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion deps.build.compileSdkVersion
-    buildToolsVersion deps.build.buildToolsVersion
+    namespace 'com.jaychang.demo.srv'
+    compileSdk deps.build.compileSdkVersion
     defaultConfig {
         applicationId "com.jaychang.demo.srv"
         minSdkVersion deps.build.minSdkVersion
@@ -20,9 +20,9 @@ android {
 
 dependencies {
     implementation deps.support.appcompat
+    implementation deps.support.swiperefreshlayout
     implementation deps.butterKnife.core
     annotationProcessor deps.butterKnife.compiler
-    implementation deps.avi
     implementation project(':library')
     implementation project(':library-kotlin-android-extensions')
 }
